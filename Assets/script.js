@@ -16,22 +16,22 @@ $('.saveBtn').on('click', function (event) {
 });
 
 // Gets stored inputs from local storage
-$('#Time08am .input').val(localStorage.getItem('Time08am'));
-$('#Time09am .input').val(localStorage.getItem('Time09am'));
-$('#Time10am .input').val(localStorage.getItem('Time10am'));
-$('#Time11am .input').val(localStorage.getItem('Time11am'));
-$('#Time12pm .input').val(localStorage.getItem('Time12pm'));
-$('#Time13pm .input').val(localStorage.getItem('Time13pm'));
-$('#Time14pm .input').val(localStorage.getItem('Time14pm'));
-$('#Time15pm .input').val(localStorage.getItem('Time15pm'));
-$('#Time16pm .input').val(localStorage.getItem('Time16pm'));
-$('#Time17pm .input').val(localStorage.getItem('Time17pm'));
+$('#Time08AM .input').val(localStorage.getItem('Time08AM'));
+$('#Time09AM .input').val(localStorage.getItem('Time09AM'));
+$('#Time10AM .input').val(localStorage.getItem('Time10AM'));
+$('#Time11AM .input').val(localStorage.getItem('Time11AM'));
+$('#Time12PM .input').val(localStorage.getItem('Time12PM'));
+$('#Time13PM .input').val(localStorage.getItem('Time13PM'));
+$('#Time14PM .input').val(localStorage.getItem('Time14PM'));
+$('#Time15PM .input').val(localStorage.getItem('Time15PM'));
+$('#Time16PM .input').val(localStorage.getItem('Time16PM'));
+$('#Time17PM .input').val(localStorage.getItem('Time17PM'));
 
 // Updates the .input boxes with provided css styling
 
 function updateColor() {
 
-    var currentTime = moment().format('HH');
+    var currentTime = moment().format('HHA');
 
 // loops over each time block in html
     $('.time-block').each(function () {
